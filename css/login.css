@@ -193,6 +193,12 @@
     text-decoration: underline;
     color: #eda5a5
   }
+  .p-small >a{
+    color: #eda5a5;
+  }
+  .p-small >a:hover{
+    color: #ffdcdc;
+  }
 
 
 /* ------會員登入 + 立即註冊------ */
