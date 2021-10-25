@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", "yuan";
+  }
+  
+  @font-face{
+    font-family: yuan;
+    src: url(../fonts/yuan.ttc);
+  }
+  h1{
+    color: #797979;
+    text-align: center;
+    font-family: "Roboto";
+    padding: 0px;
+  }
+  h2{
+      color: #848484;
+      font-size: 18px;
+  }
+  div.banner1{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100%;
+    height: 60px;
+    background-color: #eda5a5;
+  }
+  
+  
+  /*=====================================*/
+  /* nav bar Start*/
+  .nav{
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #ffffff;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 1px 0.5px lightgray;
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+    z-index: 10;
+  }
+  /* 左邊的區塊 */
+  .nav_left{
+    /* width: 800px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 14px;
+    /* padding: 0 1rem; */
+  }
+  .search{
+    display: flex;
+    align-items: center;
+  }
+  .search_w{
+    padding: 0 10px 0 3px;
+  }
+  .search_img{
+    width:18px;
+    height: 18px;
+  }
+  input.search_bar:focus{
+    border:1px solid #797979;
+    background-color: #ffdcdc;
+    outline: none;
+    color: #797979;
+  }
+  .shop_text{
+    margin: 0 10px;
+  }
+  /* 右邊的區塊 */
+  .nav_right{
+    display: flex;
+    font-size: 14px;
+  }
+  .member{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .member > p >a{
+    text-decoration: none;
+    color: #797979;
+  }
+  .member > p >a:hover{
+    color: #eda5a5;
+  }
+  .member >img{
+    width: 19px;
+    height: 21px;
+  }
+  .top_r_w{
+  margin: 0 5px;
+  }
+  .items_list{
+    /* border: 1px solid red; */
+    display: block;
+  }
+  .nav_all{
+    /* border: 1px solid red; */
+  
+    color: #797979;
+    text-decoration: none;
+    margin-right: 10px;
+    height:100%;
+    display: flex;
+    align-items: center;
+  }
+  .shop_list{
+    /* border: 1px solid orange; */
+    position: relative;
+  }
+  .shop_list:hover .items_list{
+    display: block;
+  }
+  .items_list{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: -82%;
+  }
+  .shop_text:hover{
+   color: #eda5a5;
+  }
+  .items_list >li{
+    list-style: none;
+    background-color: #ffdcdc;
+    vertical-align: top;
+    text-align: center;
+  }
+  .items_list >li:hover{
+    background-color: #eda5a5;
+  }
+  .items_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #626262;
+    padding: 15px 0;
+    width: 150px;
+  }
+  /* nav bar End */
+  
+    /* ===============  header ==============  */
+   
+  
+  /*=======================*/
+
+
+  /* 上區會員專屬 */
+  .s-square{
+    margin: 50px auto;
+    font-size: 14px;
+    color:#797979;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #797979;
+  }
+  .top{
+    margin: 0 auto;
+    min-width: 1200px;
+    height: 200px;
+    /* border: 1px solid green; */
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: top;
+
+  }
+  .member_icon{
+    margin: 0 auto;
+    /* border: 1px solid #000000; */
+  }
+  .icon_w{
+    margin: 0 auto;
+    height: 30px;
+    width: 500px;
+    font-size: 14px;
+    color:#797979;
+    /* border: 1px solid #000000; */
+
+  }
+  .p-small{
+    margin: 30px auto;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #eda5a5
+  }
+
+
+/* ------會員登入 + 立即註冊------ */
+.all_c{
+  min-width: 1200px;
+  height: 361px;
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+.pink_words{
+  min-width: 1200px;
+  height: 60px;
+  /* border: 1px solid purple; */
+  display: flex;
+}
+.pink_a{
+  margin: 0 auto;
+  margin-left: 380px;
+  font-size: 24px;
+  color: #eda5a5;
+  text-align: center;
+  text-shadow: 0em 0.1em 0.1em #797979;
+}
+.pink_b{
+  margin: 0 auto;
+  margin-left: 30px;
+  font-size: 24px;
+  color: #eda5a5;
+  text-align: center;
+  text-shadow: 0em 0.1em 0.1em #797979;
+}
+.pink1{
+  width: 400px;
+  height: 300px;
+  margin: 0 30px;
+  background-color: #ffdcdc;
+  /* border: 1px solid #000000; */
+}
+.pink2{
+  width: 400px;
+  height: 300px;
+  background-color: #ffdcdc;
+  /* border: 1px solid #000000; */
+}
+.two_pink{
+  margin-left: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.account_w{
+  font-size: 14px;
+  color: #797979;
+}
+.account_w2{
+  font-size: 14px;
+  color: #797979;
+}
+
+input.account{
+  color: #797979;
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+input.account2{
+  color: #797979;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+input.account3{
+  color: #797979;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input.birthday{
+  color: #797979;
+  width: 190px;
+  text-align: center;
+
+}
+input.account:focus{
+  border:1px solid #797979;
+  outline: none;
+  color: #797979;
+}
+input.account2:focus{
+  border:1px solid #797979;
+  outline: none;
+  color: #797979;
+}
+input.account3:focus{
+  border:1px solid #797979;
+  outline: none;
+  color: #797979;
+}
+
+input.password{
+  color: #797979;
+  margin-bottom: 25px;
+}
+input.password2{
+  color: #797979;
+    margin-top: 10px;
+  margin-bottom: 10px;
+}
+.password_a{
+  color: #797979;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 133px;
+}
+input.password:focus{
+  border:1px solid #797979;
+  outline: none;
+  color: #797979;
+}
+input.password2:focus{
+  border:1px solid #797979;
+  outline: none;
+  color: #797979;
+}
+input.password_a:focus{
+  border:1px solid #797979;
+  outline: none;
+  color: #797979;
+}
+.remember_me_w{
+  color: #797979;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.forget{
+  color: #797979;
+  font-size: 12px;
+}
+.pink1 >a{
+  color: #797979;
+  font-size: 12px;
+  text-decoration: none;
+}
+.pink1 >a:hover{
+  color: #eda5a5;
+}
+.btn1{
+  margin-left: 30px;
+  font-size: 14px;
+  background-color: #eda5a5;
+  color: #ffffff;
+  border: 0;
+  padding: 3px 25px 3px 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+.btn1:hover{
+  background-color: #eda5a5;
+  color: #ffdcdc;
+}
+
+
+
+/* -------會員專屬權益------- */
+.main{
+  margin: 100px auto;
+  min-width: 1200px;
+  width: 1200px;
+  height: 800px;
+  /* border:1px solid green; */
+  text-align: center;
+}
+.pink_c{
+  margin: 0 auto;
+  font-size: 24px;
+  color: #eda5a5;
+  text-align: center;
+  text-shadow: 0em 0.1em 0.1em #797979;
+}
+.special{
+  position: absolute;
+  width: 80px;
+  height: 800px;
+    top: 965px;
+    left: 365px;
+  text-align: center;
+  /* border:1px solid orange; */
+}
+.icon_cc{
+  width: 80px;
+  height: 100px;
+  margin-top: 20px;
+  /* border:1px solid orange; */
+}
+.icon_abcd{
+  margin: 40px auto 20px auto;
+}
+
+.icon_abc{
+  margin: 20px auto;
+}
+
+
+.special_w{
+  position: absolute;
+  width: 600px;
+  height: 800px;
+  left: 98px;
+  top: 73px;
+  margin-top: 0px;
+  /* border:1px solid gray; */
+  text-align: left;
+}
+.text_m1{
+  font-size: 14px;
+  color: #797979;
+  margin-bottom: 60px;
+}
+.text_m2{
+  font-size: 14px;
+  color: #797979;
+  margin-bottom: 90px;
+}
+.text_m3{
+  font-size: 14px;
+  color: #797979;
+  margin-bottom: 105px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 頁尾 */
+.footer{
+  position: relative;
+  padding: 25px 0;
+  background-color: #eda5a5;
+  color: #848484;
+  text-align: center;
+  /* min-width: 768px; */
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.logos{
+  margin: 0 10px;
+}
+.left_1{
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+/* 頁尾左側 */
+.about_us_main{
+  position: relative;
+  padding-top: 50px;
+}
+.about_us .contact_us{
+  display: inline-block;
+}
+.about_us_w{
+  margin-top: -70px;
+  color: #797979;
+}
+.about_us >a{
+  text-decoration: none;
+  color: #848484;
+}
+.about_h2{
+  color: #626262;
+  font-size: 18px;
+  /* border: 1px solid black; */
+  padding-bottom: 1rem;
+}
+.story{
+  padding-bottom: 1rem;
+}
+.story > a{
+  text-decoration: none;
+  color: #848484;
+}
+.story > a:hover{
+  color: #ffdcdc;
+}
+.process{
+  color: #797979;
+  padding-bottom: 2rem;
+}
+.process > a{
+  text-decoration: none;
+  color: #848484;
+}
+.process > a:hover{
+  color: #ffdcdc;
+}
+
+
+/* 頁尾右側 */
+.contact_us_w{
+  font-size: 18px;
+  color: #626262;
+  padding-bottom: 1rem;
+}
+.phone{
+  padding-bottom: 1rem;
+}
+.time{
+  padding-bottom: 2rem;
+}
+
+/* 頁尾下側 */
+.declaration{
+  font-size: 14px;
+}
+.declaration >a{
+  text-decoration: none;
+  color: #797979;
+}
+.declaration >a:hover{
+  color: #ffdcdc;
+}
