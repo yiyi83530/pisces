@@ -174,7 +174,33 @@
     /* border: 1px solid red; */
 
   }
-  .square{
+  .square1{
+    margin: auto 30px;
+    width: 150px;
+    height: 95px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #ffffff;
+    background-color: #eda5a5;
+    border: 1px solid #797979;
+  }
+  .square2{
+    margin: auto 30px;
+    width: 150px;
+    height: 95px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #797979;
+    background-color: #ffdcdc;
+    border: 1px solid #797979;
+  }
+  .square3{
     margin: auto 30px;
     width: 150px;
     height: 95px;
