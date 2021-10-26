@@ -96,6 +96,12 @@
   .top_r_w{
   margin: 0 5px;
   }
+
+.cart > p >a{
+  color: #eda5a5;
+}
+
+
   .items_list{
     /* border: 1px solid red; */
     display: block;
@@ -252,7 +258,7 @@
 
 .article2{
   min-width: 1200px;
-  height: 600px;
+  height: 800px;
   margin-top: -100px;
   margin-bottom: 100px;
   text-align: center;
@@ -263,14 +269,20 @@
 
 /* 收藏清單 */
 .like_nm{
+  width: 100px;
+  width: 800px;
+  margin-left: 212px;
+  border-bottom: 1px solid #797979;
+  padding: 12px 0px 50px 0px;
+  /* border: 1px solid gray; */
   margin-top: -50px;
   font-size: 14px;
   color: #797979;
 }
 .sq_a{
   min-width: 1200px;
-  height: 400px;
-  margin-top: 50px;
+  height: 600px;
+  margin-top: 20px;
   margin-bottom: 100px;
   text-align: center;
   border: 1px solid green;
@@ -283,6 +295,64 @@
   border: 1px solid #797979;
 } 
 
+
+.all_items{
+  margin: 0 auto;
+  width: 1200px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* border: 1px solid black; */
+  padding: 0 100px;
+}
+.card1{
+  width: 15%;
+  /* border: 1px solid black; */
+  margin: 0 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.pic1{
+  width: 100%;
+  /* position: relative; */
+}
+.pic_text{
+  font-size: 14px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: #848484;
+
+}
+.price{
+  font-size: 14px;
+  color: #848484;
+  text-align: center;
+}
+.pic_text >img{
+  /* width: 100%; */
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+/* 商品 */
+.full{
+  position: absolute;
+  left: 5%;
+  bottom: 178px;
+}
+.cl1-1{
+  position: absolute;
+  left: 75%;
+  bottom: 33px;
+}
+.cl1-2{
+  position: absolute;
+  left: 87%;
+  bottom: 33px;
+}
 
 
 

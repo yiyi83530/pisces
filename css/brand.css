@@ -151,7 +151,42 @@
 
 
 
+  .color_banner{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100%;
+    height: 60px;
+    background-color: #ffdcdc;
+  }
+  .banner_img{
+    position: relative;
+  }
 
+  .banner_img > img {
+    width: 100%;
+}
+
+.banner_wd{
+  font-size: 36px;
+  color: #ffffff;
+  text-shadow: 0rem 0.2rem 0.4rem #eda5a5;
+  text-align: center;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 235px;
+  left: 25px;
+  /* border: 1px solid red; */
+}
+
+.p_bg{
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  top: 210px;
+  left: 0px;
+  opacity: 0.3;
+  background-color: #eda5a5;
+}
 
 
 
