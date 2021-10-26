@@ -267,7 +267,7 @@ input.account{
 }
 input.account2{
   color: #797979;
-  margin-top: 30px;
+  margin-top: 42px;
   margin-bottom: 10px;
 }
 input.account3{
@@ -295,6 +295,12 @@ input.account3:focus{
   border:1px solid #797979;
   outline: none;
   color: #797979;
+}
+input.birthday:focus{
+  border:1px solid #797979;
+  outline: none;
+  color: #797979;
+
 }
 
 input.password{
@@ -345,7 +351,7 @@ input.password_a:focus{
   color: #eda5a5;
 }
 .btn1{
-  margin-left: 30px;
+  margin-left: 28px;
   font-size: 14px;
   background-color: #eda5a5;
   color: #ffffff;
@@ -357,6 +363,20 @@ input.password_a:focus{
 .btn1:hover{
   background-color: #eda5a5;
   color: #ffdcdc;
+}
+
+.remember_me_w2{
+  text-decoration: none;
+  color: #797979;
+  font-size: 12px;
+}
+.remember_me_w2 >a{
+  text-decoration: none;
+  color: #eda5a5;
+  font-size: 12px;
+}
+.remember_me_w2 >a:hover{
+  color: #797979;
 }
 
 

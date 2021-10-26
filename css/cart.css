@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", "yuan";
+  }
+  
+  @font-face{
+    font-family: yuan;
+    src: url(../fonts/yuan.ttc);
+  }
+  h1{
+    color: #797979;
+    text-align: center;
+    font-family: "Roboto";
+    padding: 0px;
+  }
+  h2{
+      color: #848484;
+      font-size: 18px;
+  }
+  div.banner1{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100%;
+    height: 60px;
+    background-color: #eda5a5;
+  }
+  
+  
+  /*=====================================*/
+  /* nav bar Start*/
+  .nav{
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #ffffff;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 1px 0.5px lightgray;
+    position: sticky;
+    top: 0;
+    padding: 15px 0;
+    z-index: 10;
+  }
+  /* 左邊的區塊 */
+  .nav_left{
+    /* width: 800px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 14px;
+    /* padding: 0 1rem; */
+  }
+  .search{
+    display: flex;
+    align-items: center;
+  }
+  .search_w{
+    padding: 0 10px 0 3px;
+  }
+  .search_img{
+    width:18px;
+    height: 18px;
+  }
+  input.search_bar:focus{
+    border:1px solid #797979;
+    background-color: #ffdcdc;
+    outline: none;
+    color: #797979;
+  }
+  .shop_text{
+    margin: 0 10px;
+  }
+  /* 右邊的區塊 */
+  .nav_right{
+    display: flex;
+    font-size: 14px;
+  }
+  .member{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .member > p >a{
+    text-decoration: none;
+    color: #797979;
+  }
+  .member > p >a:hover{
+    color: #eda5a5;
+  }
+  .member >img{
+    width: 19px;
+    height: 21px;
+  }
+  .top_r_w{
+  margin: 0 5px;
+  }
+  .items_list{
+    /* border: 1px solid red; */
+    display: block;
+  }
+  .nav_all{
+    /* border: 1px solid red; */
+  
+    color: #797979;
+    text-decoration: none;
+    margin-right: 10px;
+    height:100%;
+    display: flex;
+    align-items: center;
+  }
+  .shop_list{
+    /* border: 1px solid orange; */
+    position: relative;
+  }
+  .shop_list:hover .items_list{
+    display: block;
+  }
+  .items_list{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: -82%;
+  }
+  .shop_text:hover{
+   color: #eda5a5;
+  }
+  .items_list >li{
+    list-style: none;
+    background-color: #ffdcdc;
+    vertical-align: top;
+    text-align: center;
+  }
+  .items_list >li:hover{
+    background-color: #eda5a5;
+  }
+  .items_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #626262;
+    padding: 15px 0;
+    width: 150px;
+  }
+  /* nav bar End */
+  
+    /* ===============  header ==============  */
+   
+  
+  /*=======================*/
+
+
+  /* 上方流程框框 */
+
+.section{
+  min-width: 1200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+  position: relative;
+
+}
+  .sqs{
+    min-width: 1200px;
+    height: 200px;
+    /* margin-top: -300px; */
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+
+  }
+  .square{
+    margin: auto 30px;
+    width: 150px;
+    height: 95px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #797979;
+    background-color: #ffdcdc;
+    border: 1px solid #797979;
+  }
+.article{
+  min-width: 1200px;
+  height: 600px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid purple;
+
+}
+
+
+
+
+
+.pink_bar{
+  margin: 100px auto;
+  margin-top: 50px;
+  width: 100%;
+  height: 23px;
+  background-color: #ffdcdc;
+  position: relative;
+}
+.pink_bar2{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.bar_wd{
+  font-size: 14px;
+  color: #797979;
+  position: absolute;
+  top: -10px;
+  left: 340px;
+}
+
+.article2{
+  min-width: 1200px;
+  height: 600px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  text-align: center;
+  border: 1px solid orange;
+
+}
+
+
+/* 收藏清單 */
+.like_nm{
+  margin-top: -50px;
+  font-size: 14px;
+  color: #797979;
+}
+.sq_a{
+  min-width: 1200px;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  border: 1px solid green;
+}
+
+.gray_line{
+  text-align: center;
+  width: 600px;
+  height: 1px;
+  border: 1px solid #797979;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 頁尾 */
+.footer{
+    position: relative;
+    padding: 25px 0;
+    background-color: #eda5a5;
+    color: #848484;
+    text-align: center;
+    /* min-width: 768px; */
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .logos{
+    margin: 0 10px;
+  }
+  .left_1{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  
+  
+  }
+  
+  /* 頁尾左側 */
+  .about_us_main{
+    position: relative;
+    padding-top: 50px;
+  }
+  .about_us .contact_us{
+    display: inline-block;
+  }
+  .about_us_w{
+    margin-top: -70px;
+    color: #797979;
+  }
+  .about_us >a{
+    text-decoration: none;
+    color: #848484;
+  }
+  .about_h2{
+    color: #626262;
+    font-size: 18px;
+    /* border: 1px solid black; */
+    padding-bottom: 1rem;
+  }
+  .story{
+    padding-bottom: 1rem;
+  }
+  .story > a{
+    text-decoration: none;
+    color: #848484;
+  }
+  .story > a:hover{
+    color: #ffdcdc;
+  }
+  .process{
+    color: #797979;
+    padding-bottom: 2rem;
+  }
+  .process > a{
+    text-decoration: none;
+    color: #848484;
+  }
+  .process > a:hover{
+    color: #ffdcdc;
+  }
+  
+  
+  /* 頁尾右側 */
+  .contact_us{
+  }
+  .contact_us_w{
+    font-size: 18px;
+    color: #626262;
+    padding-bottom: 1rem;
+  }
+  .phone{
+    padding-bottom: 1rem;
+  }
+  .time{
+    padding-bottom: 2rem;
+  }
+  
+  /* 頁尾下側 */
+  .declaration{
+    font-size: 14px;
+  }
+  .declaration >a{
+    text-decoration: none;
+    color: #797979;
+  }
+  .declaration >a:hover{
+    color: #ffdcdc;
+  }

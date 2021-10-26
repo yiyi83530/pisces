@@ -196,15 +196,72 @@ div.october{
 /* 圖片跑馬燈 TOP 10 */
 div.pink_move{
   margin: 100px auto;
+  margin-top: 100px;
   height: 364px;
   width: 1200px;
+  min-width: 1200px;
   background-color: #ffdcdc;
   /* border: 1px solid green; */
-  text-align: center;
+
+  display: relative;
+
 }
 .pink_move_img{
-  vertical-align: middle;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 100%;
+  position: relative;
+  /* border: 1px solid red; */
+
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
 }
+
+.hot_s{
+  position: absolute;
+  font-size: 36px;
+  color: #797979;
+  text-shadow: 0.2rem 0.2rem 0.2rem #ffffff;
+  top: 60px;
+  left: 17px;
+  letter-spacing: 8px;
+}
+.top10{
+  position: absolute;
+  font-size: 48px;
+  color: #eda5a5;
+  top: 245px;
+  left: 525px;
+}  
+.white_heart{
+  position: absolute;
+  top: 75px;
+  left: 1050px;
+}
+.phos{
+  margin-top: 30px;
+}
+.hot1{
+  margin: 0 10px;
+}
+.hot2{
+  margin: 0 10px;
+}
+.hot3{
+  margin: 0 10px;
+  margin-bottom: 120px;
+}
+.hot4{
+  margin: 0 10px;
+}
+.hot5{
+  margin: 0 10px;
+}
+
 
 
 .pink_bar{
@@ -239,16 +296,23 @@ div.pink_move{
   padding: o 100px;
 }
 .card{
-  width: 17%;
+  width: 15%;
   /* border: 1px solid black; */
   margin: 0 10px;
+  margin-bottom: 50px;
+}
+.card1{
+  width: 15%;
+  /* border: 1px solid black; */
+  margin: 0 10px;
+  margin-left: 110px;
   margin-bottom: 50px;
 }
 
 
 .pic1{
   width: 100%;
-  position: relative;
+  /* position: relative; */
 }
 .pic_text{
   font-size: 14px;
@@ -275,7 +339,7 @@ div.pink_move{
 .full{
   position: absolute;
   left: 5%;
-  bottom: 170px;
+  bottom: 178px;
 }
 .cl1-1{
   position: absolute;
