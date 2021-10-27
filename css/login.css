@@ -93,6 +93,9 @@
     width: 19px;
     height: 21px;
   }
+  .login_1 > p >a{
+    color: #eda5a5;
+  }
   .top_r_w{
   margin: 0 5px;
   }
