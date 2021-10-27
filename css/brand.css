@@ -160,6 +160,7 @@
   }
   .banner_img{
     position: relative;
+    margin-bottom: 150px;
   }
 
   .banner_img > img {
@@ -173,7 +174,7 @@
   text-align: center;
   letter-spacing: 5px;
   position: absolute;
-  top: 235px;
+  top: 423px;
   left: 25px;
   /* border: 1px solid red; */
 }
@@ -188,15 +189,114 @@
   background-color: #eda5a5;
 }
 
+.clothes{
+  margin: 150px auto;
+  font-size: 14px;
+  color: #797979;
+  text-align: center;
+
+}
+.pink_bar{
+  margin: 100px auto;
+  width: 100%;
+  height: 23px;
+  background-color: #ffdcdc;
+  position: relative;
+}
+.pink_bar2{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.bar_wd{
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #797979;
+  position: absolute;
+  top: -10px;
+  left: 340px;
+}
+
+/* 如何申請 */
+.how_title{
+  font-size: 36px;
+  color: #797979;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.middle_use{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.relative{
+  position: relative;
+  margin-bottom: 100px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  /* border: 1px solid black; */
+  /* padding: 25px; */
+  gap: 10px;
+}
+.grid-item {
+  /* border: 1px solid red; */
+  color: #797979;
+  padding: 25px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.apply{
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  top: 51px;
+  left: 311px;
+}
+.check{
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  top: 51px;
+  left: 495px;
+}
+.pass{
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  top: 51px;
+  left: 656px;
+}
+.share{
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  top: 51px;
+  left: 817px;
+}
 
 
+.stpes{
+  /* border: 1px solid red; */
+  color: #eda5a5;
+  padding: 0px;
+  font-size: 24px;
+  text-align: center;
+}
 
-
-
-
-
-
-
+.draws{
+  /* border: 1px solid red; */
+  color: #eda5a5;
+  padding: 0px;
+  font-size: 24px;
+  text-align: left;
+}
 
 
 
