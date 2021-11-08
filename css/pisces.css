@@ -358,6 +358,97 @@ div.pink_move{
 
 
 /* 頁碼 */
+.section{
+  min-width: 1200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid green; */
+  position: relative;
+
+}
+  .sqs{
+    min-width: 1200px;
+    height: 145px;
+    /* margin-top: -300px; */
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  .sqs >a{
+    text-decoration: none;
+  }
+  .sqs >a:hover{
+    text-decoration: none;
+    background-color: #ffdcdc;
+  }
+  .square1{
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #797979;
+    background-color: #ffdcdc;
+    border: 1px solid #797979;
+  }
+  .square2{
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #797979;
+    border: 1px solid #797979;
+  }
+  .square3{
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #797979;
+    border: 1px solid #797979;
+  }
+  .square4{
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #797979;
+    border: 1px solid #797979;
+  }
+  .square5{
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px;
+    color: #797979;
+    border: 1px solid #797979;
+  }
+
+
 .page_nm{
 /* border: 1px solid red; */
 justify-content: center;
