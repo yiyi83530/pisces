@@ -15,6 +15,9 @@ h1{
   font-family: "Roboto";
   padding: 0px;
 }
+@media(max-width:767px){
+  font-size: 24px;
+}
 h2{
     color: #848484;
     font-size: 18px;
@@ -63,8 +66,8 @@ header {
   box-shadow: 0px 10px 0px #eda5a5;
 }
 .hamburger img{
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin-top: 15px;
 }
 .hamburger-line2 {
@@ -93,15 +96,38 @@ header {
   z-index: 100;
 }
 .menu li a {
+  width: 100%;
   display: block;
-  padding: 5px;
-  margin: 0px 20px 5px;
+  padding: 10px 0;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   /* border-bottom: 3px solid #ffffff; */
+}
+
+a.all_p{
+padding: 10px 0px 12px 35px;
+}
+
+a.all_p:hover{
+  background-color: #ffffff;
+  color: #eda5a5;
+  transition: background-color 0.2s linear;
+}
+
+li > accordion{
+  width: 100%;
+    background-color: #eda5a5;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
 .prod{
@@ -129,15 +155,21 @@ ul > a{
 }
 
 .ffmember{
-  width: 25px;
-  height: 25px;
-  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  /* position: absolute;
+  top: 26px;
+  left: 55px; */
+  /* border: 1px solid black; */
 }
 
 .ffcart{
   width: 30px;
   height: 30px;
-  border: 1px solid black;
+  /* position: absolute;
+  top: 22px;
+  left: 98px; */
+  /* border: 1px solid black; */
 }
 .abc{
     width: 30px;
@@ -145,7 +177,11 @@ ul > a{
     display: inline-block;
   }
 .abcd{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 10px;
   }
 ul.li > li_cc{
   display: flex;
@@ -184,6 +220,91 @@ ul.li > li_cc{
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+	background-color: #6DC4F4;
+}h1 { 
+     color:white;
+ 
+} */
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+button.accordion {
+  width: 100%;
+  background-color: #eda5a5;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 10px 0px 12px 35px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+  font-family: FontAwesome;
+  content: "\f150";
+  font-family: "fontawesome";
+  font-size: 18px;
+  float: right;
+  margin-right: 20px;
+}
+
+button.accordion.is-open:after {
+  content: "\f151";
+}
+
+button.accordion:hover,
+button.accordion.is-open {
+  background-color: #ffffff;
+  color: #eda5a5;
+}
+
+.accordion-content {
+  background-color: #eda5a5;
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;;
+  transition: max-height 0.2s ease-in-out;
+}
+.accordion-content > li {
+  list-style: none;;
+}
+
+.accordion-content > li:hover {
+    background-color: #ffffff;
+    color: #eda5a5;
+    transition: max-height 0.2s ease-in-out;
+}
+
+
+.accordion-content > a {
+  font-size: 14px;
+  background-color: #eda5a5;
+  padding: 5px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+
+
 
 
 
@@ -357,6 +478,8 @@ div.october{
   position: relative;
 }
 .middle_w{
+  /* width: 100%; */
+  max-width: 1200px;
   align-items: center;
   display: flex;
   justify-content: center;  
@@ -366,6 +489,125 @@ div.october{
   top: 35%;
   right: 0;
 }
+
+
+/* =================================== */
+.slider_container {
+  margin: auto 10px;
+  margin-bottom: 50px;
+  width: 35%;
+  position: relative;
+  border: 20px solid;
+  border-color: #ffdcdc;
+  background-color: #ffdcdc;
+  box-shadow: #666 0 0 5px;
+  display: inline-block;
+  }
+
+  .slider_container::before{
+    content:"";
+    padding-bottom: 100%;
+    display: block;
+    width: 100%;
+  }
+  .slider-box{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  
+  .slider_container div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 100%;
+  height: 100%;
+  }
+
+  .slider_container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+  
+  .slider_container div {
+  -webkit-animation: round 25s linear infinite;
+  animation: round 25s linear infinite;
+  }
+  
+  @-webkit-keyframes round {
+  4% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 0 - 1秒 淡入*/
+  }
+  20% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 1- 5秒靜止*/
+  }
+  24% {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* 5-6秒淡出*/
+  }
+  }
+  @keyframes round {
+  4% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 0 - 1秒 淡入*/
+  }
+  20% {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 1- 5秒靜止*/
+  }
+  24% {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* 5-6秒淡出*/
+  }
+  }
+  .slider_container div:nth-child(5) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  }
+  
+  .slider_container div:nth-child(4) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  }
+  
+  .slider_container div:nth-child(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  }
+  
+  .slider_container div:nth-child(2) {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+  }
+  
+  .slider_container div:nth-child(1) {
+  -webkit-animation-delay: 20s;
+  animation-delay: 20s;
+  }
+
+
+  /* ====================================== */
+
+
+
+
+
+
 
 /* 圖片跑馬燈 TOP 10 */
 div.pink_move{
