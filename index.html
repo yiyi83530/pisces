@@ -12,9 +12,14 @@
   -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 
-    <link href="./css/pisces.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--css cdn 套件 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="./css/pisces.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +36,7 @@
             <div class="banner1"></div>
 
 
-           
+
     </header>
 
 
@@ -44,76 +49,78 @@
         <label for="menu-switcher" class="hamburger">
             <div class="hamburger-line"></div>
         </label>
-        
+
         <ul class="menu">
             <input type="checkbox" name="menu-switcher" id="menu-switcher" />
-            <label for="menu-switcher" class="hamburger">
-                <img src="./image/exit.png">
+            <label for="menu-switcher" class="hamburger2">
+                <img class="exit_img" src="./image/exit.png">
             </label>
-        <div class="abcd">
-            
+            <div class="abcd">
+
                 <a class="abc" href="###"><img class="ffmember" src="./image/ffmember.png"></a>
                 <a class="abc" href="###"><img class="ffcart" src="./image/ffcart.png"></a>
-        </div>
+            </div>
+
+            <input type="text" class="search_bar">
+
             <li><a class="all_p" href="">所有商品</a></li>
-           
 
 
 
-<div class="container">
+            <div class="container">
 
-  <button class="accordion">商品分類</button>
-  <div class="accordion-content">
-    
-    <ul class="menu2">
-            <li>
-                <a class="all_p" href="#">熱銷商品 Top50</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">所有商品 All</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">上身 Top</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">下身 Bottoms</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">洋裝 Dress</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">套裝/連身褲 Suit</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">飾品 Accessories</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">配件 Hat/Belt</a>
-            </li>
-            <li>
-                <a class="all_p" href="#">鞋 Shoes</a>
-            </li>
+                <button class="accordion">商品分類</button>
+                <div class="accordion-content">
+
+                    <ul class="menu2">
+                        <li>
+                            <a class="all_p" href="#">熱銷商品 Top50</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">所有商品 All</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">上身 Top</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">下身 Bottoms</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">洋裝 Dress</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">套裝/連身褲 Suit</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">飾品 Accessories</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">配件 Hat/Belt</a>
+                        </li>
+                        <li>
+                            <a class="all_p" href="#">鞋 Shoes</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <button class="accordion">關於我們</button>
+                <div class="accordion-content">
+                    <li>
+                        <a class="all_p" href="#">品牌故事 Story</a>
+                    </li>
+                    <li>
+                        <a class="all_p" href="#">購物流程 Process</a>
+                    </li>
+                    <li>
+                        <a class="all_p" href="#">品牌大使 Activities</a>
+                    </li>
+                </div>
+            </div>
+
+
         </ul>
-
-
-  </div>
-
-  <button class="accordion">關於我們</button>
-  <div class="accordion-content">
-    <li>
-        <a class="all_p" href="#">品牌故事 Story</a>
-    </li>
-    <li>
-        <a class="all_p" href="#">購物流程 Process</a>
-    </li>
-    <li>
-        <a class="all_p" href="#">品牌大使 Activities</a>
-    </li>
-  </div>
-</div>
-
-
-</ul>
 
 
         <a href="./pisces.html"><img class="nav_all" style="margin: 0;" src="./image/logo.png" alt=""></a>
@@ -198,17 +205,18 @@
 
 
 
-
-
     <div class="banner-img">
         <!-- <img src="./image/banner.png" class="bannerimg"> -->
         <img src="./image/banner.png">
     </div>
 
-    <div class="middle_w">
-        <div class="october">
-            <h1>NEW ARRIVAL</h1>
-            <h1>- OCTOBER -</h1>
+    <!-- animate__animated animate__fadeInUp  -->
+
+    <!-- dataSet -->
+    <div class="middle_w"  data-aos="fade-up" data-aos-once="true"  data-aos-duration="2000">
+        <div class="october ">
+            <h1 >NEW ARRIVAL</h1>
+            <h1>- NOVEMBER -</h1>
             <img src="./image/pheart.png" class="pheart">
         </div>
 
@@ -218,55 +226,57 @@
 
 
 
-<div class="slider-box">
+    <!-- ====================商品區域==================== -->
+
+    <main class="animate__animated animate__fadeInUp slider-box">
 
 
-<div class="slider_container">
-        <div>
-        <img src="./image/r1.png" alt="pure css3 slider" />
-        <span class="info">Image Description 1</span>
-        </div>
-        <div>
-        <img src="./image/r2.png" alt="pure css3 slider" />
-        <span class="info">Image Description 2</span>
-        </div>
-        <div>
-        <img src="./image/r3.png" alt="pure css3 slider" />
-        <span class="info">Image Description 3</span>
-        </div>
-        <div>
-        <img src="./image/r4.png" alt="pure css3 slider" />
-        <span class="info">Image Description 4</span>
-        </div>
-        <div>
-        <img src="./image/r5.png" alt="pure css3 slider" />
-        <span class="info">Image Description 5</span>
-        </div>
+        <div class="slider_container">
+            <div>
+                <img src="./image/r1.png" alt="pure css3 slider" />
+                <span class="info">Image Description 1</span>
+            </div>
+            <div>
+                <img src="./image/r2.png" alt="pure css3 slider" />
+                <span class="info">Image Description 2</span>
+            </div>
+            <div>
+                <img src="./image/r3.png" alt="pure css3 slider" />
+                <span class="info">Image Description 3</span>
+            </div>
+            <div>
+                <img src="./image/r4.png" alt="pure css3 slider" />
+                <span class="info">Image Description 4</span>
+            </div>
+            <div>
+                <img src="./image/r5.png" alt="pure css3 slider" />
+                <span class="info">Image Description 5</span>
+            </div>
         </div>
         <div class="slider_container">
-        <div>
-        <img src="./image/r6.png" alt="pure css3 slider" />
-        <span class="info">Image Description 6</span>
+            <div>
+                <img src="./image/r6.png" alt="pure css3 slider" />
+                <span class="info">Image Description 6</span>
+            </div>
+            <div>
+                <img src="./image/r7.png" alt="pure css3 slider" />
+                <span class="info">Image Description 7</span>
+            </div>
+            <div>
+                <img src="./image/r8.png" alt="pure css3 slider" />
+                <span class="info">Image Description 8</span>
+            </div>
+            <div>
+                <img src="./image/r9.png" alt="pure css3 slider" />
+                <span class="info">Image Description 9</span>
+            </div>
+            <div>
+                <img src="./image/r10.png" alt="pure css3 slider" />
+                <span class="info">Image Description 10</span>
+            </div>
         </div>
-        <div>
-        <img src="./image/r7.png" alt="pure css3 slider" />
-        <span class="info">Image Description 7</span>
-        </div>
-        <div>
-        <img src="./image/r8.png" alt="pure css3 slider" />
-        <span class="info">Image Description 8</span>
-        </div>
-        <div>
-        <img src="./image/r9.png" alt="pure css3 slider" />
-        <span class="info">Image Description 9</span>
-        </div>
-        <div>
-        <img src="./image/r10.png" alt="pure css3 slider" />
-        <span class="info">Image Description 10</span>
-        </div>
- </div>
 
-</div>
+    </main>
 
 
 
@@ -279,6 +289,10 @@
         <img src="./image/middle2.png" class="middle1">
         <img src="./image/middle3.png" class="middle2">
     </div>
+
+
+
+
 
     <!-- 圖片跑馬燈 TOP 10 -->
     <div class="pink_move">
@@ -559,32 +573,33 @@
 
     </footer>
     </div>
+    <!-- aos js cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        const accordionBtns = document.querySelectorAll(".accordion");
+
+        accordionBtns.forEach((accordion) => {
+            accordion.onclick = function () {
+                this.classList.toggle("is-open");
+
+                let content = this.nextElementSibling;
+                console.log(content);
+
+                if (content.style.maxHeight) {
+                    //this is if the accordion is open
+                    content.style.maxHeight = null;
+                } else {
+                    //if the accordion is currently closed
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    console.log(content.style.maxHeight);
+                }
+            };
+        });
 
 
-<script>
-
-const accordionBtns = document.querySelectorAll(".accordion");
-
-accordionBtns.forEach((accordion) => {
-  accordion.onclick = function () {
-    this.classList.toggle("is-open");
-
-    let content = this.nextElementSibling;
-    console.log(content);
-
-    if (content.style.maxHeight) {
-      //this is if the accordion is open
-      content.style.maxHeight = null;
-    } else {
-      //if the accordion is currently closed
-      content.style.maxHeight = content.scrollHeight + "px";
-      console.log(content.style.maxHeight);
-    }
-  };
-});
-
-
-</script>
+    </script>
 
 
 </body>
