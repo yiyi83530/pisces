@@ -47,7 +47,7 @@ header {
   height: 50px;
   position: absolute;
   top: 7px;
-  right: 10px;
+  right: -12px;
   display: block;
   z-index: 100;
   /* background-color: #eda5a5; */
@@ -157,6 +157,7 @@ ul > a{
 .ffmember{
   width: 20px;
   height: 20px;
+  margin: 4px -10px;
   /* position: absolute;
   top: 26px;
   left: 55px; */
@@ -174,6 +175,8 @@ ul > a{
 .abc{
     width: 30px;
     height: 30px;
+    padding: 0 20px;    
+    margin-left: -10px;
     display: inline-block;
   }
 .abcd{
