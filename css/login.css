@@ -31,6 +31,9 @@ h2{
     color: #848484;
     font-size: 18px;
 }
+h3{
+  color: #eda5a5;
+}
 div.banner1{
   /* margin: 0 auto; */
   width: 100% !important;
@@ -507,7 +510,7 @@ width: 56px;
   .icon_w{
     margin: 0 auto;
     height: 30px;
-    width: 500px;
+    width: 100%;
     font-size: 14px;
     color:#797979;
     /* border: 1px solid #000000; */
@@ -527,209 +530,111 @@ width: 56px;
   }
 
 
+
+
+
 /* ------會員登入 + 立即註冊------ */
-.all_c{
-  min-width: 1200px;
-  height: 361px;
-  /* border: 1px solid red; */
-  display: inline-block;
-}
-.pink_words{
-  min-width: 1200px;
-  height: 60px;
-  /* border: 1px solid purple; */
-  display: flex;
-}
-.pink_a{
-  margin: 0 auto;
-  margin-left: 380px;
-  font-size: 24px;
-  color: #eda5a5;
-  text-align: center;
-  text-shadow: 0em 0.1em 0.1em #797979;
-}
-.pink_b{
-  margin: 0 auto;
-  margin-left: 30px;
-  font-size: 24px;
-  color: #eda5a5;
-  text-align: center;
-  text-shadow: 0em 0.1em 0.1em #797979;
-}
-.pink1{
-  width: 400px;
-  height: 300px;
-  margin: 0 30px;
-  background-color: #ffdcdc;
-  /* border: 1px solid #000000; */
-}
-.pink2{
-  width: 400px;
-  height: 300px;
-  background-color: #ffdcdc;
-  /* border: 1px solid #000000; */
-}
-.two_pink{
-  margin-left: 25px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 
-}
-.account_w{
-  font-size: 14px;
-  color: #797979;
-}
-.account_w2{
-  font-size: 14px;
-  color: #797979;
+#container1, #container2 {
+
+  /* border: 2px solid blue; */
+    padding: 10px;
+    width: 400px;
+    height: 100%;
+    background-color: #ffdcdc;
+    border-radius: 5px;
+    border-top: 10px solid #eda5a5;
+    box-shadow: 0 0px 70px rgb(0 0 0 / 10%);
+    position: relative;
+    margin: 0 auto;
+    top: 0rem;
+    text-align: center;
 }
 
-input.account{
-  color: #797979;
-  margin-top: 80px;
-  margin-bottom: 25px;
-}
-input.account2{
-  color: #797979;
-  margin-top: 42px;
-  margin-bottom: 10px;
-}
-input.account3{
-  color: #797979;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-input.birthday{
-  color: #797979;
-  width: 190px;
-  text-align: center;
 
-}
-input.account:focus{
-  border:1px solid #797979;
-  outline: none;
-  color: #797979;
-}
-input.account2:focus{
-  border:1px solid #797979;
-  outline: none;
-  color: #797979;
-}
-input.account3:focus{
-  border:1px solid #797979;
-  outline: none;
-  color: #797979;
-}
-input.birthday:focus{
-  border:1px solid #797979;
-  outline: none;
-  color: #797979;
-
+#container2 {
+  visibility: hidden;
+  height: 100%;
 }
 
-input.password{
+#username, #password, h3, #date, #birthday, #email, #comfirm_password, #username2, #password2 {
+  width: 100%;
+  height: 20px;
+  margin: 1rem auto;
   color: #797979;
-  margin-bottom: 25px;
+  padding: 1.5rem;
 }
-input.password2{
-  color: #797979;
-    margin-top: 10px;
-  margin-bottom: 10px;
-}
-.password_a{
-  color: #797979;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 133px;
-}
-input.password:focus{
-  border:1px solid #797979;
-  outline: none;
-  color: #797979;
-}
-input.password2:focus{
-  border:1px solid #797979;
-  outline: none;
-  color: #797979;
-}
-input.password_a:focus{
-  border:1px solid #797979;
-  outline: none;
-  color: #797979;
-}
-.remember_me_w{
-  color: #797979;
-  font-size: 12px;
-  margin-right: 10px;
-}
-.forget{
-  color: #797979;
-  font-size: 12px;
-}
-.pink1 >a{
-  color: #797979;
-  font-size: 12px;
-  text-decoration: none;
-}
-.pink1 >a:hover{
-  color: #eda5a5;
-}
-.btn1{
-  margin-left: 28px;
-  font-size: 14px;
-  background-color: #eda5a5;
+.submit {
   color: #ffffff;
-  border: 0;
-  padding: 3px 25px 3px 25px;
-  margin-top: 10px;
-  text-align: center;
+  background: #eda5a5;
+  cursor: pointer;
+  width: 100%;
+  height: 20%;
+  margin: 0.5rem auto;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: 0px;
 }
-.btn1:hover{
-  background-color: #eda5a5;
-  color: #ffdcdc;
+form a {
+  text-decoration: none;
+  float: right;
+  padding: 1rem;
+  color: #797979;
+}
+form a:hover {
+  color: #ffffff;
+}
+button.singup {
+  margin: 20px auto;
+  color: #a3a2a3;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+button.login {
+  margin: 20px auto;
+  color: #a3a2a3;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+}
+.birthday{
+  color: #797979;
 }
 
-.remember_me_w2{
-  text-decoration: none;
-  color: #797979;
-  font-size: 12px;
-}
-.remember_me_w2 >a{
-  text-decoration: none;
-  color: #eda5a5;
-  font-size: 12px;
-}
-.remember_me_w2 >a:hover{
-  color: #797979;
-}
+
 
 
 
 /* -------會員專屬權益------- */
 .main{
   margin: 100px auto;
-  min-width: 1200px;
-  width: 1200px;
+  min-width: 100%;
+  width: 100%;
   height: 800px;
   /* border:1px solid green; */
   text-align: center;
 }
 .pink_c{
   margin: 0 auto;
+  min-width: 100%;
   font-size: 24px;
   color: #eda5a5;
   text-align: center;
   text-shadow: 0em 0.1em 0.1em #797979;
 }
 .special{
-  position: absolute;
-  width: 80px;
+  position: relative;
+  min-width: 100%;
   height: 800px;
-    top: 965px;
-    left: 365px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+
   /* border:1px solid orange; */
 }
 .icon_cc{
@@ -749,10 +654,9 @@ input.password_a:focus{
 
 .special_w{
   position: absolute;
-  width: 600px;
   height: 800px;
   left: 98px;
-  top: 73px;
+  top: 45px;
   margin-top: 0px;
   /* border:1px solid gray; */
   text-align: left;
@@ -770,7 +674,7 @@ input.password_a:focus{
 .text_m3{
   font-size: 14px;
   color: #797979;
-  margin-bottom: 105px;
+  margin-bottom: 90px;
 }
 
 

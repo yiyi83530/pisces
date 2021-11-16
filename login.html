@@ -244,55 +244,70 @@
   </div>
 
 
-  <!-- 會員登入 + 立即註冊 -->
-  <div class="all_c">
 
 
 
-    <div class="two_pink_W">
 
 
-      <!-- -------會員登入------- -->
-      <div class="pink_words">
-        <div class="pink_a">
-          會員登入
+
+
+
+
+
+
+  <section class="login">
+    <div class="login_page">
+        <div id="container1">
+            <div class="login">
+                <h3>登入 Login</h3>
+
+                <form action="./index.html">
+                    <input type="text" id="username" name="username" placeholder="帳號" required>
+                    <div class="tab"></div>
+                    <input type="text" id="password" name="password" placeholder="密碼" required>
+                    <div class="tab"></div>
+                    <a href="">忘記密碼?</a>
+                    <button class="submit">登入</button>
+                </form>
+
+                <!-- <h5 onclick="show_hide()">註冊帳號</h5> -->
+                <button class="singup" onclick="show_hide()"> 立即註冊</button>
+
+            </div><!-- login end-->
+        </div><!-- container1 end-->
+    </div><!-- login_page end-->
+
+    <div class="signup_page" id="container2">
+        <div class="signup">
+            <h3>立即註冊 Sign Up</h3>
+            <form action="#">
+                <input type="text" id="username2" name="username" placeholder="帳號" required>
+                <div class="tab"></div>
+                <input type="text" id="password2" name="password" placeholder="密碼" required>
+                <div class="tab"></div>
+                <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
+                <div class="tab"></div>
+                <input type="date" id="birthday" name="date" placeholder="生日" required>
+                <div class="tab"></div>
+                <input type="text" id="email" name="email" placeholder="電子郵件" required>
+                <div class="tab"></div>
+                <button class="submit">立即註冊</button>
+            </form>
+
+            <!-- <h5 onclick="show_hide()">登入帳號</h5> -->
+            <button class="login" onclick="show_hide()"> 登入帳號</button>
+
         </div>
-        <div class="pink_b">
-          立即註冊
-        </div>
-      </div>
-
-
-      <div class="two_pink">
-
-        <div class="pink1">
-          <p class="account_w">帳號：<input class="account" type="text" name="account"></p>
-          <p class="account_w">密碼：<input class="password" type="password" name="password"></p>
-          <input type="checkbox" class="remember_me" name="remember_me" />
-          <label class="remember_me_w" for="remember_me">記住我</label>
-
-          <a class="forget" href="###">忘記密碼?</a>
-          <input type="button" value="登入" onclick="location.href='要前往的網頁連結'" class="btn1">
-
-        </div>
-
-
-        <!-- -------立即註冊------- -->
-
-        <div class="pink2">
-          <p class="account_w2">帳號：<input class="account2" type="text" name="account"></p>
-          <p class="account_w2">密碼：<input class="password2" type="password" name="password"></p>
-          <p class="account_w2">再次輸入密碼：<input class="password_a" type="password" name="password"></p>
-          <p class="account_w2">生日：<input class="birthday" type="date" name="birthday"></p>
-          <p class="account_w2">Email：<input class="account3" type="email" name="email"></p>
-          <input type="checkbox" class="remember_me2" name="remember_me" />
-          <label class="remember_me_w2" for="remember_me">同意<a class="yes" href="###">隱私權政策</a></label>
-          <input type="button" value="立即註冊" onclick="location.href='要前往的網頁連結'" class="btn1">
-
-        </div>
-      </div>
     </div>
-  </div>
+    </div>
+</section>
+
+
+
+
+
+
+
 
 
   <!-- -------會員專屬權益------- -->
