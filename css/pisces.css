@@ -4,14 +4,17 @@
   box-sizing: border-box;
   font-family: "Noto Sans", "yuan";
 }
+
 body{
   /* aos rwd 旁邊有白邊 */
   /* overflow: hidden; */
+  
 }
 
 @font-face{
   font-family: yuan;
   src: url(../fonts/yuan.ttc);
+  
 }
 h1{
   color: #797979;
@@ -29,9 +32,8 @@ h2{
     font-size: 18px;
 }
 div.banner1{
-  margin: 0 auto;
-  width: 100%;
-  min-width: 100%;
+  /* margin: 0 auto; */
+  width: 100% !important;
   height: 30px;
   background-color: #eda5a5;
 }
@@ -56,6 +58,9 @@ header {
   right: 12px;
   display: block;
   z-index: 100;
+  cursor: pointer;
+
+
   /* background-color: #eda5a5; */
 }
 .hamburger2 {
@@ -71,6 +76,7 @@ header {
 .exit_img{
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 .hamburger-line {
   width: 30px;
@@ -90,6 +96,8 @@ header {
   height: 20px;
   margin-top: 15px;
 }
+
+
 .hamburger-line2 {
   width: 30px;
   height: 5px;
@@ -174,6 +182,9 @@ ul > a{
   transform: translateX(0%);
 }
 
+
+
+
 .ffmember{
   width: 20px;
   height: 20px;
@@ -217,7 +228,7 @@ ul.li > li_cc{
   }
 
   header {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
   }
   .menu {
@@ -478,12 +489,17 @@ div.main{
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 768px){
+ .middle_img{
+   display: block;
+ }
+}
 
-
-.middle1{
+/* .middle1{
   height: auto;
   width: 100%;
-}
+  object-fit: cover;
+} */
 
 
 
@@ -521,11 +537,14 @@ div.october{
 .pheart{
   position: absolute;
   top: 35%;
-  right: 110px;
+  /* right: 110px; */
+  right: 30%;
+  
 }
 @media screen and (max-width: 768px){
   .pheart{
-    right: 10%;
+    right: 17%;
+  }
 }
 
 
@@ -533,13 +552,14 @@ div.october{
 .slider_container {
   margin: auto 10px;
   margin-bottom: 50px;
-  width: 35%;
+  width: 45%;
   position: relative;
   border: 20px solid;
   border-color: #ffdcdc;
   background-color: #ffdcdc;
   box-shadow: #666 0 0 5px;
   display: inline-block;
+  border-style: double;
   }
 
   .slider_container::before{
@@ -714,6 +734,14 @@ div.october{
 
 
 
+/* 圖片跑馬燈 TOP 10 */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ffdcdc;
+  background: #ffdcdc;
+}
 
 
 
@@ -789,7 +817,7 @@ div.pink_move{
 
 
 .pink_bar{
-  margin: 100px auto;
+  margin: 60px auto;
   width: 100%;
   max-width: 100%;
   height: 23px;
@@ -815,7 +843,8 @@ div.pink_move{
 /* 所有商品 */
 .all_items{
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   /* border: 1px solid black; */
@@ -879,9 +908,224 @@ div.pink_move{
 }
 
 
+
+
+
+
+/* 愛心動畫 */
+
+
+
+.heart{
+  width: 100px;
+  height: 100px;
+/*   border: 1px solid black; */
+  background-image: url("https://cssanimation.rocks/images/posts/steps/heart.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  
+}
+.heart.is-active {
+  transition-duration:1s;
+  background-position: -2800px 0;
+}
+
+.stage{
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  transform:translate(-50%,-50%);
+  z-index: 100;
+}
+
+
+/* 
+
+.heart-like-button {
+  position: absolute;
+}
+.heart-like-button:before {
+  position: absolute;
+  top: -244px;
+  left: 23px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  width: 15px;
+  height: 25px;
+  border-radius: 40px 40px 0 0;
+  background-color: #ffffff;
+  content: "";
+  cursor: pointer;
+  transition: background .4s;
+}
+.heart-like-button:after {
+  position: absolute;
+  top: -244px;
+  left: 9px;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+  width: 15px;
+  height: 25px;
+  border-radius: 40px 40px 0 0;
+  background-color: #ffffff;
+  content: "";
+  cursor: pointer;
+  transition: background .4s;
+}
+
+.heart-like-button.liked::before,
+.heart-like-button.liked::after {
+  background-color: #d65076;
+}
+.heart-like-button.liked {
+  animation: liked .4s ease;
+}
+@keyframes liked {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 480px) {
+  #container {
+    height: auto;
+  }
+} */
+
+
+
+/* 商品區 */
+
+
+main.main{
+  /* border: 1px solid green; */
+  /* height: 1000px; */
+  width: 100%;
+  min-height: 100vh; /*螢幕高度*/
+  padding: 20px;
+  transition: all 0.5s;
+}
+@media (max-width: 767.98px){
+  main.main{
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+main.main ul.item_list{
+  /* border: 1px solid green; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.main ul.item_list > li{
+  /* border: 1px solid red; */
+  width: calc((100% - 80px) / 5);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767.98px){
+  main.main ul.item_list > li{
+    width: calc((100% - 20px) / 2);
+    }
+}
+
+
+
+@media (min-width: 768px){
+  main.main ul.item_list > li:nth-child(5n){
+    margin-right: 0;
+  }
+}
+main.main ul.item_list > li > a{
+  /* border: 1px solid blue; */
+  display: block;
+  text-decoration: none;
+}
+@media (max-width: 767.98px){
+  main.main ul.item_list > li:nth-child(2n){
+  margin-right: 0;
+  }
+}
+main.main ul.item_list > li > a div.img_block{
+  /* border: 1px solid orange; */
+  text-align: center;
+  position: relative;
+}
+.img_block-sub{
+  position: relative;
+}
+
+
+.img_block-sub img:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+
+
+.img_block-sub::before{
+  content:"";
+  width: 100%;
+  padding-bottom: 120%;
+  display: block;
+
+}
+
+.img_block-sub img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 1s ease;
+  border-radius: 3%;
+
+}
+main.main ul.item_list > li > a span.item_text{
+  /* border: 1px solid blue; */
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /*main.main ul.item_list > li > a span.item_text clip預設 */
+  font-size: 14px;
+  position: relative;
+  color: #797979;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+main.main ul.item_list > li > a span.item_text:hover{
+  color: #eda5a5;
+}
+
+
+img.small_logo{
+margin-right: 5px;
+margin-top: 5px;
+text-align: end;
+}
+
+
+
+
+
 /* 頁碼 */
 .section{
-  min-width: 1200px;
+  min-width: 100%;
   height: 200px;
   text-align: center;
   display: flex;
@@ -891,7 +1135,7 @@ div.pink_move{
 
 }
   .sqs{
-    min-width: 1200px;
+    min-width: 100%;
     height: 145px;
     /* margin-top: -300px; */
     margin-bottom: 100px;
@@ -1002,10 +1246,9 @@ text-align: center;
   margin: 0 10px;
 }
 .left_1{
-  width: 500px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
 
 }
