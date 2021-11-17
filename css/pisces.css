@@ -130,7 +130,7 @@ header {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   /* border-bottom: 3px solid #ffffff; */
 }
@@ -889,6 +889,7 @@ div.pink_move{
   font-size: 14px;
   color: #848484;
   text-align: center;
+  margin-top: 8px;
 }
 .pic_text >img{
   /* width: 100%; */
