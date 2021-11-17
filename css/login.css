@@ -552,7 +552,7 @@ width: 56px;
 
 
 #container2 {
-  visibility: hidden;
+  /* visibility: hidden; */
   height: 100%;
 }
 

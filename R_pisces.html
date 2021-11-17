@@ -28,7 +28,7 @@
 
 <body>
 
-
+    https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js
 
 
 
@@ -297,7 +297,23 @@
 
 
 
-
+<!-- Place somewhere in the <body> of your page -->
+    <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="./image/r1.png" />
+          </li>
+          <li>
+            <img src="./image/r2.png" />
+          </li>
+          <li>
+            <img src="./image/r3.png" />
+          </li>
+          <li>
+            <img src="./image/r4.png" />
+          </li>
+        </ul>
+      </div>
 
     <!-- 
     <div class="marquee">
@@ -763,6 +779,13 @@
             );
         });
 
+
+        // Can also be used with $(document).ready()
+        $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+        });
 
 
 

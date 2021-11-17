@@ -744,6 +744,14 @@ div.october{
 
 
 
+ 
+ul.slides img{
+  width: 20%;
+  height: 20%;
+}
+
+
+
 /* 圖片跑馬燈 TOP 10 */
 div.pink_move{
   margin: 100px auto;
