@@ -255,7 +255,7 @@
 
 
 
-  <section class="login">
+  <section class="login" id="logintop">
     <div class="login_page">
         <div id="container1">
             <div class="login">
@@ -271,7 +271,7 @@
                 </form>
 
                 <!-- <h5 onclick="show_hide()">註冊帳號</h5> -->
-                <button class="singup" onclick="show_hide()"> 立即註冊</button>
+                <button class="singup" > 立即註冊</button>
 
             </div><!-- login end-->
         </div><!-- container1 end-->
@@ -295,7 +295,7 @@
             </form>
 
             <!-- <h5 onclick="show_hide()">登入帳號</h5> -->
-            <button class="login" onclick="show_hide()"> 登入帳號</button>
+            <button class="login" onclick="show_hide()" id="logintop2"> 登入帳號</button>
 
         </div>
     </div>
@@ -395,12 +395,29 @@
   </div>
 
 <script>
-  document.getElementsByClass("login").onclick = function() {myFunction()};
+//   document.getElementsByClass("login").onclick = function() {myFunction()};
 
-/* myFunction 在添加和删除 show 类之间切换，用于隐藏和显示下拉内容 */
-function myFunction() {
-  document.getElementById("container2").classList.toggle("show");
-}
+// /* myFunction 在添加和删除 show 类之间切换，用于隐藏和显示下拉内容 */
+// function myFunction() {
+//   document.getElementById("container2").classList.toggle("show");
+// }
+
+let signup_page  = document.getElementById("container2");
+let singup = document.getElementsByClassName("singup")[0];
+let container1 = document.getElementById("container1");
+let logintop2 = document.getElementById("logintop2");
+
+singup.addEventListener("click", function(){
+  container1.classList.toggle("close");
+
+});
+
+logintop2.addEventListener("click", function(){
+  container1.classList.toggle("close");
+  signup_page.classList.toggle("close");
+
+});
+
 </script>
 
 

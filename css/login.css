@@ -138,6 +138,10 @@ header {
   /* border-bottom: 3px solid #ffffff; */
 }
 
+.close{
+ display: none;
+}
+
 a.all_p{
 padding: 10px 0px 12px 35px;
 }
