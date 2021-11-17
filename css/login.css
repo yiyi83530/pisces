@@ -191,7 +191,6 @@ ul > a{
 .ffmember{
   width: 20px;
   height: 20px;
-  margin: 4px -50px;
   /* position: absolute;
   top: 26px;
   left: 55px; */
@@ -201,6 +200,7 @@ ul > a{
 .ffcart{
   width: 30px;
   height: 30px;
+  margin-left: 10px;
   /* position: absolute;
   top: 22px;
   left: 98px; */
@@ -216,7 +216,6 @@ ul > a{
 .abcd{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 18px;
     margin-bottom: 40px;
   }
